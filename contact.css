@@ -1,0 +1,76 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background: url(images/whitey.png);
+}
+.details{
+    margin-top:50px ;
+}
+ul li{
+    list-style: none;
+} 
+.menu{
+    width:100%;
+    padding: 50px;
+    background: url(images/MAIN.jpg);
+    background-size: cover;
+}
+.menu-items{
+    position: absolute;
+    top:35px;
+    right:5px;
+    font-size: 18px;
+}
+.menu-items a{
+    color:white;
+    text-decoration: none;
+}
+.menu-items a  li{
+    display: inline-block;
+   
+}
+.menu-items a li{
+    text-decoration:none;
+    border:2px solid transparent;
+     padding:10px;
+} 
+.menu-items a li:hover{
+/* text-decoration:underline; */
+border:2px solid white;
+transition:border 0.5s ease-in-out;
+}
+.Main{
+    height:500px;    
+    display: grid;
+    padding:50px;
+    grid-template-columns:300px 450px;
+    grid-gap:50px;
+}
+.side{
+    grid-column: 1;
+    background: url(images/MAIN.jpg);
+    background-size: cover;
+    border: 3px solid rgb(66, 186, 170);
+}
+.content{
+    margin-top:50px;
+    grid-column: 2;
+    text-align: justify;
+}
+.footer{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    padding:30px;
+    background-image:linear-gradient(to right,rgb(66, 186, 170),rgb(106, 197, 168),rgb(67, 219, 171));
+    text-align:center;
+    color:white;
+}
+@media screen and (max-width:700px){
+.Main{
+    display: inline-block;
+}
+}
